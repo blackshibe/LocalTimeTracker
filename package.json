@@ -1,12 +1,13 @@
 {
-	"name": "localtimetracker",
-	"displayName": "Local Time Tracker",
-	"description": "Log the time you are coding!",
-	"publisher": "FabricioRojas",
+	"name": "localtimetracker-fork",
+	"displayName": "Time Tracker",
+	"description": "Log the time you spent coding",
+	"publisher": "blackshibe",
 	"author": {
 		"name": "Fabricio Rojas"
 	},
 	"version": "1.0.6",
+
 	"engines": {
 		"vscode": "^1.35.0"
 	},
@@ -22,6 +23,7 @@
 	"activationEvents": [
 		"*"
 	],
+
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
@@ -45,8 +47,21 @@
 				"command": "extension.resetLanguagesColors",
 				"title": "LTT: Reset languagues colors"
 			}
+		],
+		"configuration": [
+			{
+				"title": "Time Tracker",
+				"properties": {
+					"ltt.showPauseMessage": {
+						"type": "boolean",
+						"default": false,
+						"description": "Sets which folders will be generated from the unity-tools.GenerateOrganizationFolders command"
+					}
+				}
+			}
 		]
 	},
+
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
