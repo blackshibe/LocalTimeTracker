@@ -1,0 +1,7 @@
+out
+node_modules
+.vscode-test/
+*.vsix
+timeTraked.json
+timeTrakedL.json
+token.txt

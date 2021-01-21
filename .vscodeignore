@@ -1,0 +1,16 @@
+.vscode/**
+.vscode-test/**
+typings/**
+out/test/**
+test/**
+src/**
+grunt/**
+gruntfile.js
+.travis*
+**/*.map
+.gitignore
+tsconfig.json
+vsc-extension-quickstart.md
+timeTraked.json
+timeTrakedL.json
+token.txt
