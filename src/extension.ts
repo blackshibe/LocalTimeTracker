@@ -4,7 +4,10 @@ let fs = require("fs");
 let currentLang = '';
 let colors: any;
 let gWindowState: boolean = true;
+<<<<<<< HEAD
 let config = vscode.workspace.getConfiguration('ltt');
+=======
+>>>>>>> 08d195472ae1e3b3bdeba4821f8b95ea2614fb6d
 
 export function activate(context: vscode.ExtensionContext) {
 	vscode.commands.executeCommand("extension.initTimer");
@@ -55,11 +58,15 @@ export function activate(context: vscode.ExtensionContext) {
 	initFile(filePath, projectName, context, fullCurrentDate);
 
 	let initTimer = vscode.commands.registerCommand('extension.initTimer', () => {
+<<<<<<< HEAD
 
 		if (config.get("showPauseMessage")) {
 			vscode.window.showInformationMessage('Timer started!');
 		}
 
+=======
+		vscode.window.showInformationMessage('Timer started!');
+>>>>>>> 08d195472ae1e3b3bdeba4821f8b95ea2614fb6d
 		if (timerInterval) clearInterval(timerInterval);
 		timerInterval = setInterval(() => {
 			timer.text = "LTT $(clock) " + secondsToReadableTime(seconds);
@@ -194,12 +201,16 @@ export function activate(context: vscode.ExtensionContext) {
 
 	let pauseTimer = vscode.commands.registerCommand('extension.updateStatusTimer', () => {
 		if (pause.text === "ll") {
+<<<<<<< HEAD
 
 
 			if (config.get("showPauseMessage")) {
 				vscode.window.showInformationMessage('Timer paused!');
 			}
 
+=======
+			vscode.window.showInformationMessage('Timer paused!');
+>>>>>>> 08d195472ae1e3b3bdeba4821f8b95ea2614fb6d
 			pause.text = "$(triangle-right)";
 			clearInterval(timerInterval);
 			let jsonTime = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -227,11 +238,15 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 	let pauseTimerAuto = vscode.commands.registerCommand('extension.updateStatusTimerAuto', () => {
 		if (!gWindowState) {
+<<<<<<< HEAD
 
 			if (config.get("showPauseMessage")) {
 				vscode.window.showInformationMessage('Timer paused!');
 			}
 
+=======
+			vscode.window.showInformationMessage('Timer paused!');
+>>>>>>> 08d195472ae1e3b3bdeba4821f8b95ea2614fb6d
 			pause.text = "$(triangle-right)";
 			clearInterval(timerInterval);
 			let jsonTime = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -605,7 +620,10 @@ function pieData(time: any, totalProjectTime: any) {
 
 	return JSON.stringify(dataPoints);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 08d195472ae1e3b3bdeba4821f8b95ea2614fb6d
 function pieDataL(dates: any) {
 	let data = [];
 	let labels = [];
@@ -661,7 +679,10 @@ function getTotalTime(timeProjects: any) {
 	}
 	return secondsToReadableTime(totalTime);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 08d195472ae1e3b3bdeba4821f8b95ea2614fb6d
 function getTimeByProject(timeProjects: any, jsonTime: any) {
 	let totalTime = 0;
 	let html = '';

@@ -55,11 +55,19 @@
 		"test": "npm run compile && node ./node_modules/vscode/bin/test"
 	},
 	"devDependencies": {
+<<<<<<< HEAD
 		"@types/mocha": "^2.2.42",
 		"@types/node": "^10.12.21",
 		"tslint": "^5.12.1",
 		"typescript": "^3.3.1",
 		"vscode": "^1.1.37"
+=======
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+>>>>>>> 08d195472ae1e3b3bdeba4821f8b95ea2614fb6d
 	},
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"bugs": {
