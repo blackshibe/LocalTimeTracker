@@ -1,23 +1,21 @@
 # Local Time Tracker Extension
 
-this is a fork with settings for the "paused/tracking" message added
-Is a simple VS Code extension to track the time you have spent coding
+Is a simple VS Code extension to track the time you have spent coding <br>
+this is a fork with settings for the "paused/tracking" message added 
 
 ## Features
 
 - No account needed
-    > All the data is stored locally and keeps on your device
+    > All the data is stored locally and kept on your device
 
-- Track the time you are codding on every language / file extension
+- Track the time you spent coding with every language/file extension
     > It will keep track of any language you code in
 
-- It only tracks the real time you keep codding not the time you spend on other apps
+- It only tracks time spent coding, not in other apps
     > While using other apps the timer automatically pauses and starts when you are back to code
 
 - You can check out the time spent on a chart
-    > There is a view built int with charts to see you averacge language use
-
-
+    > There is a view built int with charts to see you average language use
 
 ## Future features
 
@@ -26,8 +24,6 @@ Is a simple VS Code extension to track the time you have spent coding
 - [ ] Improve **Stats view** design
 
 - [ ] Real time refresh on **Stats view**
-
-
 
 ## Known issues
 
