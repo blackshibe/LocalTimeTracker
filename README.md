@@ -1,7 +1,6 @@
 # Local Time Tracker Extension
 
-Is a simple VS Code extension to track the time you have spent coding <br>
-this is a fork with settings for the "paused/tracking" message added 
+Is a simple VS Code extension to track the time you have spent coding 
 
 ## Features
 
